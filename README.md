@@ -1,5 +1,3 @@
-(update with more details, add comments to .env.example)
-
 # Get started with Flatfile Portal 3.0 SDK in Node.js
 
 ## Step 0: Clone this repo
