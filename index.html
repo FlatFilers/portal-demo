@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flatfile SDK Demo</title>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://unpkg.com/@flatfile/sdk/dist/index.js"></script>
+</head>
+<body>
+
+  <input type="button" id="import" value="Import Contacts" />
+  <textarea id="raw_output">Your raw output will appear here.</textarea>
+
+  <script>
+    const importer = flatfileImporter('<%= token %>')
+
+    importer.on('init', ({ batchId }) => {
+      console.log(`Batch ${batchId} has been initialized.`)
+    })
+    importer.on('launch', ({ batchId }) => {
+      console.log(`Batch ${batchId} has been launched.`)
+    })
+    importer.on('error', (error) => {
+      console.error(error)
+    })
+    importer.on('complete', async (payload) => {
+      var output = JSON.stringify(await payload.data(), null, 4);
+      console.log(output);
+      document.querySelector("#raw_output").textContent = output;
+    })
+
+    document.querySelector('#import').addEventListener('click', async () => {
+      await importer.launch()
+    })
+  </script>
+</body>
+</html>

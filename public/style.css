@@ -1,0 +1,105 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  background: #ffffff;
+  color: #3c4151;
+  font-family: "Gotham Pro", Arial, serif;
+  line-height: 1.5;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* .logo {
+  height: 150px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding-left: 26px;
+}
+.download {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.download a {
+  color: #3c4151;
+  text-decoration: none;
+}
+
+.download a:hover {
+  color: #406439;
+}
+ */
+
+#import {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 96px 0 64px 0;
+  border-radius: 4px;
+  color: #ffffff;
+  display: block;
+  padding: 13px 26px;
+  height: 50px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-family: Montserrat, "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  border: 0px;
+  outline: 0;
+  background-color: rgb(59, 47, 201);
+}
+
+#import:focus,
+#import:hover {
+  background-color: rgb(59, 47, 201);
+  border: 0px;
+  color: #ffffff;
+}
+
+#import:active {
+  background-color: rgb(59, 47, 201);
+  border: 0px;
+  color: #ffffff;
+}
+
+#raw_output {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  padding: 24px;
+  margin: 24px 0;
+  border: 1px solid #c1c6d1;
+  border-radius: 4px;
+  font-family: "Monaco", monospace;
+  background-color: #31383d;
+  color: #ffffff;
+  height: 500px;
+}
