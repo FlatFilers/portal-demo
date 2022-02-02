@@ -7,8 +7,8 @@
 
 ## Step 1: Create embed
 
-1. Go to the [Flatfile app](https://app.flatfile.io/)
-2. Create your Flatfile account (if you haven't already)
+1. Go to the [Flatfile app](https://app.flatfile.io/login?utm_source=github&utm_medium=owned&utm_content=readme&utm_campaign=q1_22_middle_of_funnel)
+2. Click Login or Signup with GitHub (if you haven't already)
 3. Use our [Getting Started Guide](https://flatfile.com/docs/getting-started/) to Create a Data Template and Create an Embed.
 
 ## Step 2: Configure .env
