@@ -9,7 +9,7 @@
   "dependencies": {
     "dotenv": "^15.0.0",
     "ejs": "^3.1.6",
-    "express": "^4.17.2",
+    "express": "^4.18.2",
     "fastify": "^3.26.0",
     "fastify-formbody": "^5.2.0",
     "fastify-static": "^4.5.0",
